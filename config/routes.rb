@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :menu_items
+
   get '/menu' => 'pages#menu'
   root 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
