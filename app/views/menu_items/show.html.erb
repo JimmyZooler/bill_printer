@@ -1,19 +1,23 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <p class="alert alert-success"><%= notice %></p>
 
-<p>
-  <strong>Number:</strong>
-  <%= @menu_item.number %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @menu_item.name %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @menu_item.price %>
-</p>
-
-<%= link_to 'Edit', edit_menu_item_path(@menu_item) %> |
-<%= link_to 'Back', menu_items_path %>
+      <p>
+        <strong>Number:</strong>
+        <%= @menu_item.number %>
+      </p>
+      
+      <p>
+        <strong>Name:</strong>
+        <%= @menu_item.name %>
+      </p>
+      
+      <p>
+        <strong>Price:</strong>
+        <%= @menu_item.price %>
+      </p>
+      
+      <%= link_to 'Edit', edit_menu_item_path(@menu_item) %> |
+      <%= link_to 'Back', menu_items_path %>
+    </div>
+</div>
